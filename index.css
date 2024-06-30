@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDD011;
+    color: #333;
+}
+
+#table {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFCC00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+#main {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#ans {
+    width: 20rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#questions {
+    width: 50rem;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+#question-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #F29363;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.qna {
+    width: 15rem;
+    height: 3rem;
+    background-color: #70BC4F;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 1rem 0;
+}
+
+.qna:hover {
+    background-color: #F29363;
+}
+
+#question-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.next-btn {
+    width: 10rem;
+    height: 3rem;
+    background-color: #F29363;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 2rem;
+    left: 60rem;
+    transition: background-color 0.3s;
+}
+
+.next-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.next-btn:hover:not(:disabled) {
+    background-color: #FFCC00;
+}

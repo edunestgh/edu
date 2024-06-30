@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghana Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <section id="table">
+        <div id="main">
+
+            <div id="ans">
+                <button class="qna" onclick="selectAnswer(0)"></button>
+                <button class="qna" onclick="selectAnswer(1)"></button>
+                <button class="qna" onclick="selectAnswer(2)"></button>
+                <button class="qna" onclick="selectAnswer(3)"></button>
+            </div>
+
+            <div id="questions">
+                <div id="question-count"></div>
+                <p id="question-text"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <button class="next-btn" id="next-btn" disabled onclick="nextQuestion()">Next</button>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
